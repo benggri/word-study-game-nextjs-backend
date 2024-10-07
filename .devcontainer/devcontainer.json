@@ -1,0 +1,48 @@
+{
+    "name": "WORD STUDY GAME NEXTJS BACKEND",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces/word-study-game-nextjs-backend",
+    "features": {
+      "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+        "plugins": "",
+        "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
+        "username": "node"
+      },
+      "github-cli": "latest"
+    },
+    "postCreateCommand": "sh .devcontainer/startup.sh",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "eamodio.gitlens",
+          "esbenp.prettier-vscode",
+          "ms-vscode.vscode-typescript-tslint-plugin",
+          "octref.vetur",
+          "Orta.vscode-jest",
+          "ritwickdey.LiveServer",
+          "csstools.postcss",
+          "ms-python.python",
+          "bradlc.vscode-tailwindcss",
+          "mechatroner.rainbow-csv",
+          "bierner.markdown-mermaid",
+        ],
+        "settings": {
+          "files.eol": "\n",
+          "editor.tabSize": 2,
+          "editor.renderWhitespace": "all",
+          "typescript.validate.enable": true,
+          "eslint.alwaysShowStatus": true,
+          "editor.formatOnSave": true,
+          "eslint.workingDirectories": [{ "mode": "auto" }],
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          },
+          "eslint.validate": ["javascript", "typescript"],
+          "remote.localPortHost": "allInterfaces",
+        },
+      }
+    },
+    "remoteUser": "node",
+  }
